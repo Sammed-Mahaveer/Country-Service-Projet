@@ -2,6 +2,8 @@ package com.example.countryservice.controller;
 
 import com.example.countryservice.model.CountryResponse;
 import com.example.countryservice.service.CountryService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,7 +17,8 @@ public class CountryController {
     }
 
     @GetMapping("/{code}")
-    public CountryResponse getCountry(@PathVariable String code) {
-        return service.getCountry(code);
+    public ResponseEntity<CountryResponse> getCountry(@PathVariable String code) {
+        CountryResponse countryResponse = service.getCountry(code);
+        return ResponseEntity.status(HttpStatus.OK).body(countryResponse);
     }
 }
