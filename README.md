@@ -79,7 +79,7 @@ The `sizeCategory` field is derived from population:
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 com.example.countryservice
