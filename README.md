@@ -143,7 +143,7 @@ Since data comes from an external API:
 
 ---
 
-### ✅ Extensibility
+# Extensibility
 
 The design allows easy extension:
 
@@ -153,7 +153,7 @@ The design allows easy extension:
 
 ---
 
-## 🚀 Future Improvements
+# Future Improvements
 
 * Add Resilience4j
 * Add Caching
